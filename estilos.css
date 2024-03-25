@@ -6,7 +6,8 @@
 }
 
 header{
-    background: url(img/foto-1.png) no-repeat top right;
+    background: url(img/foto-1.png) no-repeat top;
+    background-position-x: 79%;
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -89,7 +90,7 @@ h2{
 }
 
 .fondo{
-    background: url(img/fondo-lading.png) no-repeat top right;
+    background: url(img/fondo-lading.png) fixed;
     width: 100%;
     background-size: cover;
     padding: 0 20% 0 20%;
@@ -117,6 +118,10 @@ h2{
     background-color: black;
 }
 
+.contenido-torta-flex{
+    justify-content: flex-end;
+}
+
 .contenido-civil::before,
 .contenido-ameli::before,
 .contenido-juegos::before,
@@ -131,10 +136,14 @@ h2{
     top: 50%;
     left: -4px;
     transform: translateY(-50%);
-    width: 10px; /* Ancho del círculo */
-    height: 10px; /* Altura del círculo */
-    border-radius: 50%; /* Hace que el círculo sea redondeado */
-    background-color: black; /* Color del círculo */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.cena{
+    max-width: 70px;
 }
 
 .contenido-civil div{
@@ -252,6 +261,10 @@ h3{
     font-style: italic;
 }
 
+.contenido-torta-flex div{
+    margin-right: 20px;
+}
+
 .regalo, .asistencia {
     text-align: center;
     font-family: "minion-3-caption", serif;
@@ -274,6 +287,16 @@ h3{
     font-weight: 400;
     font-style: italic;
     line-height: 1em;
+}
+
+.ezeiza p{
+    margin-top: 9px;
+}
+
+.civil,
+.ezeiza,
+.brindis{
+    min-width: 110px;
 }
 
 .happily {
@@ -376,7 +399,7 @@ i img{
 }
 
 .anillos,
-.brindis,
+.brindis-icono,
 .ezeiza-icono,
 .cena-icono,
 .juegos-icono{
